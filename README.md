@@ -1,6 +1,6 @@
 # Turborepo starter
 
-This is an official starter Turborepo.
+This is ShopApp (An Online E-Commerce Shop That helps both seller and buyer for shopping.)
 
 ## Using this example
 
