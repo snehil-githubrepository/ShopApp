@@ -32,5 +32,8 @@ yarn-error.log*
 # turbo
 .turbo
 
+# .gitignore
+yarn-error.log
+
 # vercel
 .vercel
