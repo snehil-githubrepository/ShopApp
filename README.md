@@ -1,6 +1,7 @@
 # Turborepo starter
 
 This is ShopApp (An Online E-Commerce Shop That helps both seller and buyer for shopping.)
+![shopical-1](https://github.com/snehil-githubrepository/Shopical/assets/69778988/86707dad-d92d-44f4-92c4-61ec7178c1eb)
 
 ## Using this example
 
