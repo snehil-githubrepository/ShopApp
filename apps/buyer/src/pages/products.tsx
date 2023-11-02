@@ -1,139 +1,66 @@
 import Appbar from "@/components/Appbar";
+import UpperBar from "@/components/Upperbar";
 import React from "react";
+import ProductCard from "ui/components/ProductCard";
 
 const Products: React.FC = () => {
   return (
     <div>
       <Appbar />
-      <div className="min-h-screen bg-gray-100 p-8">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl font-bold mb-6">Explore Our Products</h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* This is start of this card*/}
-            <div className="bg-white rounded-lg shadow p-4 hover:shadow-lg">
-              <a href="/electronics">
-                <img
-                  src="/electronics.jpg"
-                  alt="Electronics"
-                  className="w-full h-36 object-cover rounded-t-lg"
-                />
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold text-blue-600">
-                    Electronics
-                  </h2>
-                  <p className="text-gray-600 mt-2">
-                    Explore the latest electronic gadgets.
-                  </p>
-                </div>
-              </a>
-            </div>
-            {/* End of Card */}
-
-            <div className="bg-white rounded-lg shadow p-4 hover:shadow-lg">
-              <a href="/products/toys">
-                <img
-                  src="/toys.jpg"
-                  alt="toys"
-                  className="w-full h-36 object-cover rounded-t-lg"
-                />
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold text-blue-600">Toys</h2>
-                  <p className="text-gray-600 mt-2">
-                    Find the perfect toys for your kids.
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div className="bg-white rounded-lg shadow p-4 hover:shadow-lg">
-              <a href="/products/clothes">
-                <img
-                  src="/clothes.jpg"
-                  alt="clothes"
-                  className="w-full h-36 object-cover rounded-t-lg"
-                />
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold text-blue-600">
-                    Clothes
-                  </h2>
-                  <p className="text-gray-600 mt-2">
-                    Stay stylish with our clothing collection.
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div className="bg-white rounded-lg shadow p-4 hover:shadow-lg">
-              <a href="/products/shoes">
-                <img
-                  src="/shoes.jpg"
-                  alt="shoes"
-                  className="w-full h-36 object-cover rounded-t-lg"
-                />
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold text-blue-600">Shoes</h2>
-                  <p className="text-gray-600 mt-2">
-                    Step out in style with our shoe collection.
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div className="bg-white rounded-lg shadow p-4 hover:shadow-lg">
-              <a href="/products/fashion-accessories">
-                <img
-                  src="/accessories.jpg"
-                  alt="accessories"
-                  className="w-full h-36 object-cover rounded-t-lg"
-                />
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold text-blue-600">
-                    Fashion Accessories
-                  </h2>
-                  <p className="text-gray-600 mt-2">
-                    Enhance your style with accessories.
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div className="bg-white rounded-lg shadow p-4 hover:shadow-lg">
-              <a href="/products/mens-fashion">
-                <img
-                  src="/mens-fashion.jpg"
-                  alt="fashion(m)"
-                  className="w-full h-36 object-cover rounded-t-lg"
-                />
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold text-blue-600">
-                    Men's Fashion
-                  </h2>
-                  <p className="text-gray-600 mt-2">
-                    Discover a wide range of Men's clothing.
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div className="bg-white rounded-lg shadow p-4 hover:shadow-lg">
-              <a href="/products/women-fashion">
-                <img
-                  src="/women-fashion.jpg"
-                  alt="fashion(f)"
-                  className="w-full h-36 object-cover rounded-t-lg"
-                />
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold text-blue-600">
-                    Women's Fashion
-                  </h2>
-                  <p className="text-gray-600 mt-2">
-                    Find the perfect Women's Fashion.
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
+      <UpperBar />
+      <div className="flex relative row ml-12 mt-10">
+        <ProductCard
+          name="shoes Nike"
+          description="Product Description"
+          price={2400}
+          image="/shoes-nike.jpg"
+        />
+        <ProductCard
+          name="Macbook Air 2023"
+          description="Apple 2023 MacBook Air Laptop with M2 chip: 15.3-inch Liquid Retina Display, 8GB Unified Memory, 256GB SSD Storage, 1080p FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Silver"
+          price={150000}
+          image="macbook.png"
+        />
+        <ProductCard
+          name="asus Vivobook 15"
+          description="ASUS Vivobook 15 OLED (2023), AMD Ryzen 5 7530U, 15.6' (39.62 cm) FHD OLED, Thin and Light Laptop (16GB/512GB SSD/Windows 11/Office 2021/Backlit KB/FP Sensor/Black/1.7 Kg), M1505YA-LK541WS"
+          price={90000}
+          image="asus-vivobook.png"
+        />
+        <ProductCard
+          name="Leotude Print"
+          description="Pack of 3 Men Printed Round Neck Cotton Blend Multicolor T-Shirt"
+          price={1200}
+          image="leotude-cloth.png"
+        />
+      </div>
+      <div className="flex relative row ml-12 m-2">
+        <ProductCard
+          name="APPLE iPhone 15 (white, 128 GB)"
+          description="Experience the iPhone 15 , your dynamic companion. Dynamic Island ensures you stay connected, bubbling up alerts seamlessly while you're busy. Its durable design features infused glass and aerospace-grade aluminum, making it dependable and resistant to water and dust. Capture life with precision using the 48 MP Main Camera, perfect for any shot. "
+          price={135000}
+          image="iphone-15.png"
+        />
+        <ProductCard
+          name="Sofa (Gray)"
+          description="Product Description"
+          price={60000}
+          image="sofa.jpg"
+        />
+        <ProductCard
+          name="Head & Shoulders Smooth and Silky, Anti Dandruff Shampoo for Women & Men , 1 L"
+          description="Richly indulgent anti-dandruff shampoo for dry, damaged or frizzy hair, Leaves hair up to 100%"
+          price={564}
+          image="shampoo.png"
+        />
+        <ProductCard
+          name="Home Decor Lucky Deer Family Statue Piano Finish Ceramic Figures - (Set of 4, Multicolor)"
+          description="1. Set of Lovely Deer Family - Hot Firing Ceramic statue for Home Decor
+          2. The beautiful sculpture is constructed of high-quality ceramic .
+          3. These lovely ceramic sculptures are rich in color and have a smooth surface, giving them a lifelike appearance."
+          price={900}
+          image="Home-Decor-lucky-deer.png"
+        />
       </div>
     </div>
   );

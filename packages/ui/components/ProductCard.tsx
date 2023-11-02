@@ -14,8 +14,13 @@ const ProductCard: React.FC<ProductCardProps> = ({
   image,
 }) => {
   return (
-    <div className="max-w-xs w-full rounded overflow-hidden shadow-lg m-2">
-      <img src={image} alt={name} className="w-full" />
+    <div className="max-w-xs w-full rounded overflow-hidden shadow-lg m-2 bg-gray-100">
+      <img
+        src={image}
+        alt={name}
+        className="w-full"
+        style={{ height: "27vh" }}
+      />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{name}</div>
         <p className="text-gray-700 text-base">{description}</p>
@@ -23,7 +28,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
       <div className="px-6 py-4">
         <span className="text-gray-700 text-base">
-          Price: ${price.toFixed(2)}
+          Price: Rs.{price.toFixed(2)}
         </span>
       </div>
     </div>
