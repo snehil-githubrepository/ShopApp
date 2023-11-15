@@ -2,8 +2,62 @@ import Appbar from "@/components/Appbar";
 import UpperBar from "@/components/Upperbar";
 import React from "react";
 import ProductCard from "ui/components/ProductCard";
+import ProductFilters from "ui/components/ProductFilter";
+import { useState } from "react";
+
+// interface Product {
+//   id: number;
+//   name: string;
+//   price: number;
+//   rating: number;
+// }
 
 const Products: React.FC = () => {
+  // const yourProducts: Product[] = [
+  //   // Replace with your actual product data
+  //   // Example:
+  //   { id: 1, name: 'Product 1', price: 10, rating: 4.5 },
+  //   { id: 2, name: 'Product 2', price: 20, rating: 4.0 },
+  //   // Add more products here
+  // ];
+
+  // const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
+
+  // const handleFilter = (filters: ProductFilters) => {
+  //   // Example: Filtering based on price range and sorting
+  //   const filteredProducts = yourProducts.filter((product) => {
+  //     const isWithinPriceRange =
+  //       product.price >= filters.minPrice && product.price <= filters.maxPrice;
+
+  //     return isWithinPriceRange;
+  //   });
+
+  //   // If you want to sort the filtered products, you can do that here
+  //   if (filters.sortBy === 'price') {
+  //     filteredProducts.sort((a, b) => a.price - b.price);
+  //   } else if (filters.sortBy === 'name') {
+  //     filteredProducts.sort((a, b) => a.name.localeCompare(b.name));
+  //   } else if (filters.sortBy === 'rating') {
+  //     filteredProducts.sort((a, b) => b.rating - a.rating);
+  //   }
+
+  //   // Now you can update your state or component with the filtered and sorted products
+  //   setFilteredProducts(filteredProducts);
+  // };
+
+  //   // If you want to sort the filtered products, you can do that here
+  //   if (filters.sortBy === "price") {
+  //     filteredProducts.sort((a, b) => a.price - b.price);
+  //   } else if (filters.sortBy === "name") {
+  //     filteredProducts.sort((a, b) => a.name.localeCompare(b.name));
+  //   } else if (filters.sortBy === "rating") {
+  //     filteredProducts.sort((a, b) => b.rating - a.rating);
+  //   }
+
+  //   // Now you can update your state or component with the filtered and sorted products
+  //   setFilteredProducts(filteredProducts); // Assuming you have a state for filtered products
+  // };
+
   return (
     <div>
       <Appbar />
@@ -63,6 +117,11 @@ const Products: React.FC = () => {
         />
       </div>
     </div>
+    // <ProductFilters
+    // minPrice={13} // Replace with your actual min price value
+    // maxPrice={50}
+    // sortBy={"price"}
+    // onFilter={(filters) => handleFilter(filters)} />
   );
 };
 

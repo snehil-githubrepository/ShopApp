@@ -19,7 +19,7 @@ const Appbar = () => {
   }
 
   return (
-    <nav className="bg-green-500  flex justify-around h-66">
+    <nav className="bg-blue-700  flex justify-around h-66">
       <div className="flex items-center space-between p-1">
         <Link href="/" passHref>
           <img
