@@ -3,14 +3,6 @@ import { useRouter } from "next/router";
 const Landing: React.FC = () => {
   const router = useRouter();
 
-  const handleLoginClick = () => {
-    router.push("/login");
-  };
-
-  const handleRegisterClick = () => {
-    router.push("/register");
-  };
-
   const checkoutProductsClick = () => {
     router.push("/products");
   };
@@ -18,38 +10,22 @@ const Landing: React.FC = () => {
   return (
     <div>
       <div className="p-10 grid flex items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-        <div className="text-center md:text-left">
-          <h1 className="text-4xl font-bold">
-            Welcome to Shopical : Future Of Ecommerce
-          </h1>
-          <p className="text-xl">
-            Explore a wide range of products and discover the best deals.
-          </p>
-          <div className="flex mt-4">
-            <div className="mr-4">
-              <button
-                onClick={handleLoginClick}
-                className="bg-blue-600 text-white py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300"
-              >
-                Login
-              </button>
-            </div>
-            <div>
-              <button
-                onClick={handleRegisterClick}
-                className="bg-green-600 mr-4 text-white py-2 px-6 rounded-full hover:bg-green-700 transition duration-300"
-              >
-                Register
-              </button>
-            </div>
-            <div>
-              <button
-                onClick={checkoutProductsClick}
-                className="bg-yellow-400 text-black py-2 px-12 rounded-full hover:bg-yellow-500 transition duration-300"
-              >
-                Checkout Products First
-              </button>
-            </div>
+        <div className="text-center md:text-left items-center">
+          <div>
+            <h1 className="text-4xl font-bold">
+              Welcome to Shopical : Future Of Ecommerce
+            </h1>
+            <p className="text-xl">
+              Explore a wide range of products and discover the best deals.
+            </p>
+          </div>
+          <div className="mt-4 text-center items-center lg:flex md:flex">
+            <button
+              onClick={checkoutProductsClick}
+              className="bg-blue-600 text-white py-4 px-8 items-center rounded-lg hover:bg-blue-800 transition duration-300"
+            >
+              Shop Now
+            </button>
           </div>
         </div>
         <div className="mt-10">

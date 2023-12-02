@@ -1,6 +1,6 @@
 const nextConfig = {
   reactStrictMode: true,
-  transpilePackages: ["ui"],
+  transpilePackages: ["ui", "store", "db"],
 };
 
 module.exports = nextConfig;

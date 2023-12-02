@@ -2,7 +2,7 @@ import react from "react";
 
 const UpperBar: React.FC = () => {
   return (
-    <nav className="bg-white  flex justify-around h-66">
+    <nav className="bg-white flex lg:flex-row justify-around h-66">
       {/* card  */}
       <div className="bg-gray-100 rounded-b-full shadow p-4 hover:shadow-lg w-full md:w-1/2 lg:w-1/5">
         <a href="/electronics">
@@ -43,7 +43,7 @@ const UpperBar: React.FC = () => {
         </a>
       </div>
 
-      <div className="bg-gray-100 rounded-b-full shadow p-4 hover:shadow-lg w-full md:w-1/2 lg:w-1/5">
+      <div className="bg-gray-100 rounded-b-full shadow p-4 hover:shadow-lg w-1/2 md:w-1/2 lg:w-1/5">
         <a href="/products/shoes">
           <img
             src="shoes.jpg"
@@ -56,7 +56,7 @@ const UpperBar: React.FC = () => {
         </a>
       </div>
 
-      <div className="bg-gray-100 rounded-b-full shadow p-4 hover:shadow-lg w-full md:w-1/2 lg:w-1/5">
+      <div className="hidden lg:block bg-gray-100 rounded-b-full shadow p-4 hover:shadow-lg w-full md:w-1/2 lg:w-1/5">
         <a href="/products/fashion-accessories">
           <img
             src="accessories.jpg"
@@ -71,7 +71,7 @@ const UpperBar: React.FC = () => {
         </a>
       </div>
 
-      <div className="bg-gray-100 rounded-b-full shadow p-4 hover:shadow-lg w-full md:w-1/2 lg:w-1/5">
+      <div className="hidden lg:block bg-gray-100 rounded-b-full shadow p-4 hover:shadow-lg w-full md:w-1/2 lg:w-1/5">
         <a href="/furniture">
           <img
             src="furniture.jpg"
@@ -84,7 +84,7 @@ const UpperBar: React.FC = () => {
         </a>
       </div>
 
-      <div className="bg-gray-100 rounded-b-full shadow p-4 hover:shadow-lg w-full md:w-1/2 lg:w-1/5">
+      <div className="hidden lg:block bg-gray-100 rounded-b-full shadow p-4 hover:shadow-lg w-full md:w-1/2 lg:w-1/5">
         <a href="/home-decor">
           <img
             src="home-decor.jpg"
@@ -97,7 +97,7 @@ const UpperBar: React.FC = () => {
         </a>
       </div>
 
-      <div className="bg-gray-100 rounded-b-full shadow p-4 hover:shadow-lg w-full md:w-1/2 lg:w-1/5">
+      <div className="hidden lg:block bg-gray-100 rounded-b-full shadow p-4 hover:shadow-lg w-full md:w-1/2 lg:w-1/5">
         <a href="/grocery">
           <img
             src="grocery.jpg"
