@@ -1,20 +1,17 @@
 import mongoose from "mongoose";
+let alreadyConnected = false;
 
-const connection = {
-  isConnected: false,
-};
-
-async function ensureDbConnect() {
-  if (connection.isConnected) {
+export async function ensureDbConnected() {
+  if (alreadyConnected) {
     return;
   }
-
-  let db = await mongoose.connect(
-    "mongodb+srv://cod3r:MaodgvFbZ5CEO3en@cluster0.ozolgl3.mongodb.net/?retryWrites=true&w=majority",
-    { useNewUrlParser: true, useUnifiedTopology: true, dbName: "shopical" }
+  alreadyConnected = true;
+  await mongoose.connect(
+    "mongodb+srv://user1:user1457!@cluster0.ozolgl3.mongodb.net/",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      dbName: "shopical",
+    }
   );
-
-  connection.isConnected = true;
 }
-
-export default ensureDbConnect;

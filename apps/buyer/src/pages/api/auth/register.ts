@@ -2,34 +2,38 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { User } from "db";
 import jwt from "jsonwebtoken";
-import ensureDbConnect from "@/lib/dbConnect";
+import { ensureDbConnected } from "@/lib/dbConnect";
 const SECRET = "s3CRET";
 
 type Data = {
-  email: string;
-  password: string;
+  token?: string;
+  message?: string;
 };
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  await ensureDbConnect();
-  const { email, password } = req.body;
-  let username = email;
-  //   console.log(username);
-  //   console.log(password);
-  let user = await User.findOne({ username });
-  if (user) {
-    res.status(403).json({ message: "User already exists" });
-  } else {
+  try {
+    await ensureDbConnected();
+    const { username, password } = req.body;
+    const user = await User.findOne({ username });
+
+    if (user) {
+      return res.status(403).json({ message: "User already exists" });
+    }
+
     const obj = { username: username, password: password };
     const newUser = new User(obj);
-    newUser.save();
+    await newUser.save();
 
     const token = jwt.sign({ username, role: "user" }, SECRET, {
       expiresIn: "1h",
     });
-    res.json({ message: "Admin created successfully", token });
+
+    res.json({ message: "User created successfully", token });
+  } catch (error) {
+    console.error("Error during signup:", error);
+    res.status(500).json({ message: "Error creating admin" });
   }
 }

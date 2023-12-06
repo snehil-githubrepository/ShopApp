@@ -4,6 +4,7 @@ import { useRecoilValue, useSetRecoilState, RecoilRoot } from "recoil";
 import { isUserLoading, userState } from "store";
 import axios from "axios";
 import { useEffect } from "react";
+import Loading from "ui/components/Loading";
 import Appbar from "@/components/Appbar";
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -19,7 +20,9 @@ function App2({ Component, pageProps }: AppProps) {
   if (userLoading) {
     return (
       <>
-        Loading...
+        <div className="flex justify-center items-center h-screen">
+          <Loading />
+        </div>
         <InitUser />
       </>
     );

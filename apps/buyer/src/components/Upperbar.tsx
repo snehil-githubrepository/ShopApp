@@ -12,7 +12,7 @@ const UpperBar: React.FC = () => {
             className="w-full h-24 object-cover rounded-t-lg"
           />
           <div className="p-4">
-            <h2 className="text-xl font-semibold text-blue-600">Electronics</h2>
+            <h2 className="text-xl font-extrabold text-black">Electronics</h2>
           </div>
         </a>
       </div>
@@ -25,7 +25,7 @@ const UpperBar: React.FC = () => {
             className="w-full h-24 object-cover rounded-t-lg"
           />
           <div className="p-4">
-            <h2 className="text-xl font-semibold text-blue-600">Toys</h2>
+            <h2 className="text-xl font-extrabold text-black">Toys</h2>
           </div>
         </a>
       </div>
@@ -38,7 +38,7 @@ const UpperBar: React.FC = () => {
             className="w-full h-24 object-cover rounded-t-lg"
           />
           <div className="p-4">
-            <h2 className="text-xl font-semibold text-blue-600">Clothes</h2>
+            <h2 className="text-xl font-extrabold text-black">Clothes</h2>
           </div>
         </a>
       </div>
@@ -51,7 +51,7 @@ const UpperBar: React.FC = () => {
             className="w-full h-24 object-cover rounded-t-lg"
           />
           <div className="p-4">
-            <h2 className="text-xl font-semibold text-blue-600">Shoes</h2>
+            <h2 className="text-xl font-extrabold text-black">Shoes</h2>
           </div>
         </a>
       </div>
@@ -64,7 +64,7 @@ const UpperBar: React.FC = () => {
             className="w-full h-24 object-cover rounded-t-lg"
           />
           <div className="p-4">
-            <h2 className="text-xl font-semibold text-blue-600">
+            <h2 className="text-xl font-extrabold text-black">
               Fashion Accessories
             </h2>
           </div>
@@ -79,7 +79,7 @@ const UpperBar: React.FC = () => {
             className="w-full h-24 object-cover rounded-t-lg"
           />
           <div className="p-4">
-            <h2 className="text-xl font-semibold text-blue-600">Furniture</h2>
+            <h2 className="text-xl font-extrabold text-black">Furniture</h2>
           </div>
         </a>
       </div>
@@ -92,7 +92,7 @@ const UpperBar: React.FC = () => {
             className="w-full h-24 object-cover rounded-t-lg"
           />
           <div className="p-4">
-            <h2 className="text-xl font-semibold text-blue-600">Home Decor</h2>
+            <h2 className="text-xl font-extrabold text-black">Home Decor</h2>
           </div>
         </a>
       </div>
@@ -105,7 +105,7 @@ const UpperBar: React.FC = () => {
             className="w-full h-24 object-cover rounded-t-lg"
           />
           <div className="p-4">
-            <h2 className="text-xl font-semibold text-blue-600">Grocery</h2>
+            <h2 className="text-xl font-extrabold text-black">Grocery</h2>
           </div>
         </a>
       </div>

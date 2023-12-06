@@ -109,7 +109,7 @@ const Appbar = () => {
   } else {
     return (
       //no sm: for mobile devices because it is mobile first approach
-      <nav className="bg-gray-200 flex justify-around lg:flex lg:justify-around  h-66">
+      <nav className="bg-white flex justify-around lg:flex lg:justify-around  h-66">
         <div className="flex items-center p-1">
           <Link href="/" style={{ width: "7vw", height: "7vh" }} passHref>
             <img
@@ -123,11 +123,14 @@ const Appbar = () => {
           <SearchBar onSearch={(query) => handleSearch(query)} />
         </div>
         <div className="flex items-center space-x-4 p-3">
+          <Link href="/" className="text-black text-lg flex items-center">
+            Home
+          </Link>
           <Link
-            href="/register"
+            href="/products"
             className="text-black text-lg flex items-center"
           >
-            Register
+            Shop
           </Link>
           <Link
             href="/login"
