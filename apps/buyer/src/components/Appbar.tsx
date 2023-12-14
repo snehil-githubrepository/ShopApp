@@ -26,7 +26,11 @@ const Appbar = () => {
   }
 
   function handleLogout() {
-    console.log("logout");
+    localStorage.setItem("token", "");
+    setUser({
+      isLoading: false,
+      userEmail: null,
+    });
   }
 
   if (userEmail) {
@@ -109,7 +113,7 @@ const Appbar = () => {
   } else {
     return (
       //no sm: for mobile devices because it is mobile first approach
-      <nav className="bg-white flex justify-around lg:flex lg:justify-around  h-66">
+      <nav className="bg-gray-100 flex justify-around lg:flex lg:justify-around  h-66">
         <div className="flex items-center p-1">
           <Link href="/" style={{ width: "7vw", height: "7vh" }} passHref>
             <img
