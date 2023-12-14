@@ -2,7 +2,9 @@
 
 This is Shopical (An Online E-Commerce Shop That helps both seller and buyer for shopping.)
 
-![shopical-1](https://github.com/snehil-githubrepository/Shopical/assets/69778988/86707dad-d92d-44f4-92c4-61ec7178c1eb)
+![image](https://github.com/snehil-githubrepository/Shopical/assets/69778988/ae28bb3f-0a5c-4f78-9d51-a77d0b1c958f)
+
+![image](https://github.com/snehil-githubrepository/Shopical/assets/69778988/31879f84-afa8-420a-ad76-25e113778c13)
 
 ## Local Development 
 
