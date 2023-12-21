@@ -4,7 +4,25 @@ This is Shopical (An Online E-Commerce Shop That helps both seller and buyer for
 
 ![image](https://github.com/snehil-githubrepository/Shopical/assets/69778988/ae28bb3f-0a5c-4f78-9d51-a77d0b1c958f)
 
-![image](https://github.com/snehil-githubrepository/Shopical/assets/69778988/31879f84-afa8-420a-ad76-25e113778c13)
+---
+
+![image](https://github.com/snehil-githubrepository/Shopical/assets/69778988/a87839ca-b2d8-4601-a3e6-4b131483b4d3)
+
+---
+
+![image](https://github.com/snehil-githubrepository/Shopical/assets/69778988/de814bb7-67ff-4adf-827d-e6889011a58d)
+
+---
+
+![image](https://github.com/snehil-githubrepository/Shopical/assets/69778988/5add3da3-56fd-457b-9cb4-4652d6f528e9)
+
+---
+
+### Login 
+
+![image](https://github.com/snehil-githubrepository/Shopical/assets/69778988/c41dde05-bd27-4574-91ce-3658d991b8fe)
+
+---
 
 ## Local Development 
 
